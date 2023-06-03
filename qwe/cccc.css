@@ -1,0 +1,30 @@
+.movieLogin{
+background-color: aquamarine;
+    
+    width: 300px;
+    height: 200px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    padding-top: 30px;
+    
+
+}
+
+
+/* .movieLogin{
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.movieLogin h2{
+
+    font-size: 20px;
+    text-align: center;
+}
+ */

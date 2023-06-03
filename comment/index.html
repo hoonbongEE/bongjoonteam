@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>코멘트 창</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+<style>.comment-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-container h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.comment-container form {
+  margin-top: 20px;
+}
+
+.comment-container .form-group {
+  margin-bottom: 10px;
+}
+
+.comment-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.comment-container input[type="text"],
+.comment-container textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.comment-container button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.comment-container .comment-list {
+  margin-top: 20px;
+}
+
+.comment-container .comment-list .comment {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.comment-container .comment-list .comment:last-child {
+  border-bottom: none;
+}
+</style>
+</head>
+
+<body>
+  <div class="comment-container">
+    <h2>코멘트</h2>
+    <form>
+      <div class="form-group">
+        <label for="username">사용자명:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="comment">코멘트:</label>
+        <textarea id="comment" name="comment" required></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">게시</button>
+      </div>
+    </form>
+    <div class="comment-list">
+      <!-- 여기에 동적으로 생성되는 코멘트 리스트가 표시됩니다. -->
+    </div>
+  </div>
+</body>
+</html>
